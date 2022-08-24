@@ -85,6 +85,10 @@ a {cursor: none;}
     margin-bottom: 8px;
 }
 
+.pret:first-child {
+    margin-top: 4vh;
+}
+
 .pret b {
     font-family: 'GmarketSansMedium';
     word-spacing: 1vmin;
