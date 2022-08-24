@@ -1,0 +1,242 @@
+/*강원단감*/
+@font-face {
+    font-family: 'CWDangamAsac-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Y이드스트릿 */
+@font-face {
+    font-family: 'YdestreetB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*프리텐다드*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*지마켓산스*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    cursor: none;
+}
+a {cursor: none;}
+
+.navBox {
+    width: 88px;
+    height: 94px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* .slider-nav img {
+} */
+
+.back {
+    position: fixed;
+    right: 1.5em;
+    top: 15%;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: black;
+    color: white;
+}
+
+.back label {
+    position: absolute;
+    font-size: 30px;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-single img, .slider-single video {
+    width: max(70%, 260px) !important;
+    height: auto;
+    max-height: 580px;
+    margin: 0 auto;
+}
+
+.slider-nav {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.pret {
+    font-family: 'Pretendard-Regular';
+    margin-bottom: 8px;
+}
+
+.pret b {
+    font-family: 'GmarketSansMedium';
+    word-spacing: 1vmin;
+}
+
+.title {
+    font-family: 'GmarketSansMedium';
+    font-weight: 600;
+    margin: 0 auto;
+    width: 85%;
+    border-bottom: 1px solid black;
+    margin-bottom: max(2vmax, 10px);
+    font-size: max(2.4vmax, 20px);
+}
+
+.contBox {
+    margin-bottom: 1vh;
+}
+
+.infoBox {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: max(80%, 10px);
+}
+
+.time, .skill, .duty, .prime {
+    font-size: max(1.3vmax, 16px);
+}
+
+.info {
+    font-size: max(1.2vmax, 15px);
+    line-height: 1.8em;
+    margin-top: 4vh;
+}
+
+/* .prime p {
+    font-size: 16px;
+} */
+
+.pdf {  
+    font-family: 'GmarketSansMedium';
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 120px; 
+    font-size: 18px;
+    font-weight:  400;
+    background-color: #820826;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    float: right;
+}
+
+.contactBt {
+    width: max(2vw, 40px);
+}
+
+
+/*마우스커서 반전*/
+.cursor { z-index: 9999; position: fixed; width: 20px; height: 20px; border-radius: 50%; background: #eee; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
+ul li:hover ~ .cursor { transform: scale(5); }
+.zoom:hover ~ .cursor { transform: scale(5) !important;}
+
+
+/*디자인요소 미디어쿼리*/
+
+/*가로기준*/
+
+@media screen and (max-width : 840px) {
+    .navBox {
+        width: 64px;
+        height: 68px;
+        font-size: 1rem !important;
+        line-height: 1.4rem !important;
+        padding-top: 0 !important;
+    }
+
+    .left_item a img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width : 720px)  {
+    .title {
+        width: 70%;
+    }
+    .fix_borderL, .fix_borderR {
+        display: none;
+    }
+
+    .sarajo {
+        display: none;
+    }
+}
+
+@media screen and  (max-width : 500px)  {
+    .left_item a img {
+        width: 40px;
+    }
+
+    .navBox {
+        margin-top: 8px;
+        width: 40px;
+        height: 40px;
+        font-size: 0.75rem !important;
+        line-height: 1.4rem !important;
+        padding-top: 0 !important;
+        font-size: 12px !important;
+        background: black !important;
+        overflow: hidden;
+        color: white;
+        border-radius: 8px;
+    }
+    .navP {
+        display: none;
+    }
+
+    .left_item {
+        left: 1.4rem !important;
+    }
+
+    .contact_icon {
+        left: 1.4rem !important;
+    }
+
+    .nav_prt{
+        right: 1.4rem !important;
+    }
+
+    .navWhere {
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width : 360px)  {
+    .left_item {
+        left: 1rem !important;  
+    }
+
+    .contact_icon {
+        left: 1rem !important;
+    }
+
+    .nav_prt{
+        right: 1rem !important;
+    }
+}
+
+/*세로기준*/
+@media screen and (max-height : 640px) {
+    .fix_borderL, .fix_borderR {
+        display: none;
+    }
+}

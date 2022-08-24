@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
+    <title>GPS 인증 스탬프 투어 웹앱 - 플래깅</title>
+
+    <!--슬라이드-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!--스타일--> 
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="stylesheet" href="../css/slide_style">
+        <style>
+            body {
+              background: #eee;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+            }
+
+            .swiper {
+              width: 60%;
+              height: 100%;
+            }
+
+            .swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .swiper {
+              width: 60%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            .swiper-slide {
+              background-size: cover;
+              background-position: center;
+            }
+
+            /* 위 사진 높이 */
+            .mySwiper2 {
+              width: 60%;
+            }
+
+          @media screen and (max-width : 720px)  {
+            .mySwiper2 {
+              width: 80%;
+            }
+          }
+
+            /* 아래 사진 높이 */
+            .mySwiper {
+              height: 7vw;
+              box-sizing: border-box;
+              padding: 10px 0;
+              margin-bottom: 2vh;
+            }
+
+            .mySwiper .swiper-slide {
+              width: 25%;
+              height: 100%;
+              opacity: 0.4;
+            }
+
+            .mySwiper .swiper-slide-thumb-active {
+              opacity: 1;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .slideBoxO {
+              margin-top: 2vh;
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+              background-color: rgba(0, 0, 0, 0.3);
+            }
+        </style>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <!--디자인요소-->
+    <section class="mx-auto mb-32">
+        <!-- left -->
+        <div class="fixed left-8 top-8 z-50 left_item">
+            <a href="https://savanamonkey.github.io/SY-Portfolio/"><img src="../images/home3.svg" width="60px"></a>
+        </div>
+        <!-- Line(L)-->
+        <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
+        <!-- iCon -->
+        <div class="fixed left-10 bottom-12 text-center contact_icon">
+          <a href="tel:010-9971-2081"><img src="../images/call.svg" class="mb-4 contactBt"></a>
+          <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="../images/kakaotalk.svg" class="contactBt"></a>
+        </div>
+        <!-- right -->
+        <div class="fixed right-6 top-6 z-50 nav_prt">
+          <a>
+            <div class="text-center text-xl font-bold border-2 border-black py-2 navBox" onClick="history.go(-1)">
+              <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
+              <p class="py-1 navWhere">BACK</p>
+            </div>
+          </a>
+        </div>
+        <!--Line(R)-->
+        <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+
+        <!-- grid container -->
+        <div class="container p-10 mx-auto contBox">
+            <div class="p title">GPS 인증 스탬프 투어 웹앱 프로젝트 - 플래깅</div>
+                <!-- item card -->
+                <div
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
+                class="swiper mySwiper2 slideBoxO"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <video controls>
+                      <source src="../images/flagging/Flagging_ucc.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_6.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div thumbsSlider="" class="swiper mySwiper sarajo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/Flagging.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/flagging/flagging_6.jpg" />
+                  </div>
+                </div>
+              </div>
+                
+                <!--프로젝트 내용-->
+                <div class="infoBox">
+                    <div class=" pret time"><b>· 개발기간</b> : 2022. 05. 26 ~ 2022. 06. 21</div>
+                    <div class=" pret skill"><b>· 적용기술</b> : REST API, HTML5, CSS3, PHP, JavaScript, MySQL</div>
+                    <div class=" pret duty"><b>· 담당직무</b> : 기획 및 설계, UI/UX 디자인, 웹 퍼블리싱, 동영상 편집</div>
+                    <div class=" pret info">
+                      &nbsp;구체적인 GPS API 사용법을 배우고, 기기 카메라 연동 기능을 연계해 관광을 통한 지역 상권 부흥을 목적으로 한 새로운 개념의 스탬프 투어 웹앱을 기획했습니다.
+                      사용자가 직접 여행지의 숙박, 음식점, 관광지 등 여행 상품으로 코스를 지정한 뒤 저장을 하고, 하루 한 번 진행 가능한 '챌린지'를 시작하면 코스 주변에 도달할 시 QR인증 버튼이 활성화 되어 코드 촬영을 통해 인증할 수 있도록
+                      서비스를 구성했습니다. 한 코스 당 한 번, 랜덤 액수 마일리지 뽑기를 진행할 수 있고 추후 적립된 마일리지는 지역 경제와 관련된 상품권 혹은 교환권 등으로 교환 지급할 수 있도록 기획했습니다. <br/>
+                      <br/>
+                      &nbsp;실제 구현은 SNS 로그인, 코스 지정 및 저장, 카카오 지도 API 연동, 챌린지 시스템, 마일리지 뽑기 및 적립, 적립 내역 조회까지로 교환 시스템 이외 거의 모든 프론트 및 백이 완성도 있게 제작돼
+                      교수님과 산학 협력 업체 대표님들께 조금만 손을 보면 바로 상업적 이용이 가능한 기획과 구현 수준이라는 평가를 받았습니다.
+                    </div>
+
+                <!--프로젝트 자료-->
+                <a href="https://onedrive.live.com/View.aspx?resid=B3E0C8D12896A369!4441&wdSlideId=256&wdModeSwitchTime=1661265432051&authkey=!AH0pyNCsu4gjWio"  target="_blank"><div class="mb-4 pdf"> 보고서 보기 </div></a>
+              </div>
+            </div>
+
+
+    </section>
+
+
+<!--마우스커서-->
+<div class="cursor"></div>
+
+
+<script src="../js/cursor.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+    },
+    thumbs: {
+    swiper: swiper
+    }
+});
+</script>
+<script src="../js/slideW.js"></script>
+<script src="../js/thumb_script.js"></script>
+</body>
+
+</html>

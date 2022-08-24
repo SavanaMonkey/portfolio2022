@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
+    <title>리디자인 및 SNS 로그인 연동 - 영진직업전문학교</title>
+    
+    <!--슬라이드-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!--스타일--> 
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <link rel="stylesheet" href="../css/slide_style">
+        <style>
+            body {
+              background: #eee;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+            }
+
+            .swiper {
+              width: 60%;
+              height: 100%;
+            }
+
+            .swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .swiper {
+              width: 60%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            .swiper-slide {
+              background-size: cover;
+              background-position: center;
+            }
+
+            /* 위에 사진 높이 */
+            .mySwiper2 {
+              width: 60%;
+            }
+
+          @media screen and (max-width : 720px)  {
+            .mySwiper2 {
+              width: 80%;
+            }
+          }
+
+            /* 아래 사진 높이 */
+            .mySwiper {
+              height: 7vw;
+              box-sizing: border-box;
+              padding: 10px 0;
+              margin-bottom: 2vh;
+            }
+
+            .mySwiper .swiper-slide {
+              width: 25%;
+              height: 100%;
+              opacity: 0.4;
+            }
+
+            .mySwiper .swiper-slide-thumb-active {
+              opacity: 1;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .slideBoxO {
+              margin-top: 2vh;
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+              background-color: rgba(0, 0, 0, 0.3);
+            }
+        </style>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <!--디자인요소-->
+    <section class="mx-auto mb-32">
+        <!-- left -->
+        <div class="fixed left-8 top-8 z-50 left_item">
+            <a href="https://savanamonkey.github.io/SY-Portfolio/"><img src="../images/home3.svg" width="60px"></a>
+        </div>
+        <!-- Line(L)-->
+        <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
+        <!-- iCon -->
+        <div class="fixed left-10 bottom-12 text-center contact_icon">
+          <a href="tel:010-9971-2081"><img src="../images/call.svg" class="mb-4 contactBt"></a>
+          <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="../images/kakaotalk.svg" class="contactBt"></a>
+        </div>
+        <!-- right -->
+        <div class="fixed right-6 top-6 z-50 nav_prt">
+          <a>
+            <div class="text-center text-xl font-bold border-2 border-black py-2 navBox" onClick="history.go(-1)">
+              <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
+              <p class="py-1 navWhere">BACK</p>
+            </div>
+          </a>
+        </div>
+        <!--Line(R)-->
+        <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+
+        <!-- grid container -->
+        <div class="container p-10 mx-auto contBox">
+            <div class="p title">영진직업전문학교 리디자인 및 SNS 로그인 연동 프로젝트</div>
+                <!-- item card -->
+                <div
+                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
+                class="swiper mySwiper2 slideBoxO"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <video controls>
+                      <source src="../images/yg/yg_ucc.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_1.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_2.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_3.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_4.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_5.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_6.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_7.PNG" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div thumbsSlider="" class="swiper mySwiper sarajo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../images/yg/yg_thb.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_1.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_2.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_3.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_4.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_5.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_6.PNG" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/yg/slide_7.PNG" />
+                  </div>
+                </div>
+              </div>
+                
+                <!--프로젝트 내용-->
+                <div class="infoBox">
+                    <div class=" pret time"><b>· 개발기간</b> : 2022. 03. 16 ~ 2022. 04. 13</div>
+                    <div class=" pret skill"><b>· 적용기술</b> : REST API, Open API, jQuery, MySQL, HTML5, CSS3, JavaScript ···</div>
+                    <div class=" pret duty"><b>· 담당직무</b> : 기획 및 설계, UI/UX 설계, Open API 연구, 보고서 작성</div>
+                    <div class=" pret info">
+                      &nbsp; 코딩을 배우고 처음 돌입한 프로젝트로 프론트앤드 영역까지는 숙련도 대비 짧은 기간이 주어졌기에 온전히 완성할 수 있는 것에 초점을 맞추어
+                      보다 깔끔하게 기획했습니다. 기존에 완벽하지 못해 사용감이 떨어지던 반응형 웹을 완벽히 구현하는 것이 가장 큰 목표였고 부가적으로 다소 딱딱하고 사무적인 분위기와
+                      내용이 많아 직관적이지 못했던 UI를 '직업학교 홈페이지'를 찾는 유저 연령대를 고려하여 보다 젊고 효율적인 분위기로 재구성 했습니다.
+                      목표 설정 이후에는 팀원 각자가 기존 홈페이지를 충분히 탐색한 후 의견을 나누며 카드소팅 기법을 통해 GNB를 정돈했고
+                      발견된 UI/UX의 문제점을 종합해 적절한 해결 방안을 도출했습니다.<br/>
+                      <br/>
+                      &nbsp; 실질적인 구현 단계에선 기획 담당이 스토리 보드를 작성하여 디자인 담당에게 넘기면 한 페이지를 작업하는 동안 프론트앤드 담당은 스토리 보드를 참고하여
+                      필요한 소스를 미리 찾고 연구하는 등 최대한 업무 계획을 겹쳐 시간을 절약하기 위해 노력했습니다. 프론트앤드 작업이 끝난 후에는 피드백과
+                      사용성 검증을 통해 수정 사항을 도출하고 담당자를 배치하여 수정/보완까지 완료했습니다.<br/>
+                     <br/> 
+                     &nbsp;이후 수료 전, 마지막 프로젝트로 기존에 제작해두었던 페이지에 OPEN API를 활용하여 SNS 로그인 연동까지 마친 뒤 프로젝트를 최종 마무리지었습니다.
+                     단순히 정보를 받아와 로그인 할 뿐만 아니라 데이터 베이스까지 활용해 백앤드 영역도 어느정도 구현했습니다.
+                    </div>
+
+                <!--프로젝트 자료-->
+                <a href="https://onedrive.live.com/View.aspx?resid=B3E0C8D12896A369!4503&wdSlideId=256&wdModeSwitchTime=1661329395662&authkey=!AOjG-XhuV15dFZU" target="_blank"><div class="mb-4 pdf"> 보고서 보기 </div></a>
+              </div>
+            </div>
+
+
+    </section>
+
+<!--마우스커서-->
+<div class="cursor"></div>
+
+
+<script src="../js/cursor.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+    },
+    thumbs: {
+    swiper: swiper
+    }
+});
+</script>
+<script src="../js/slideW.js"></script>
+<script src="../js/thumb_script.js"></script>
+</body>
+
+</html>

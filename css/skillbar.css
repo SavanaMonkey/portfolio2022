@@ -1,0 +1,172 @@
+.skillWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8vh;
+}
+
+.skillBar {
+    width: 80%;
+    padding: 2vmin;
+}
+
+.whatSkill {
+    color: white;
+    padding: 1vmin;
+    font-size: max(1.2vw, 17px);
+}
+
+
+.barBody {
+    width: 100%;
+    height: max(2.4vh, 20px);
+    border-radius: 15px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.barStick {
+    width: 0%;
+    height: max(2.4vh, 20px);
+    border-radius: 15px;
+    background: #820826;
+}
+
+.howGet {
+    color: black;
+    font-weight: 600;
+    font-size: max(1vw, 14px);
+    line-height: max(2.4vh, 20px);;
+}
+
+@media screen and (max-width : 380px) {
+    .skillBar {
+        width: 90%;
+        padding: 4vmin;
+    }
+}
+
+
+/*바 애니메이션*/
+
+.ani_90 {
+    animation-name: mnia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes mnia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.ani_80 {
+    animation-name: ania;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes ania {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.ani_70 {
+    animation-name: bnia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes bnia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.ani_60 {
+    animation-name: cnia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes cnia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.ani_50 {
+    animation-name: dnia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dnia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.ani_40 {
+    animation-name: enia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes enia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+.ani_30 {
+    animation-name: fnia;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fnia {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}

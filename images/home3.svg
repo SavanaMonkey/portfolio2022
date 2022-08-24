@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_2" data-name="타원 2" cx="25" cy="25" r="25" transform="translate(241 355)" fill="#820826"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_4" data-name="그룹 4" transform="translate(-256 -363)">
+    <g id="그룹_3" data-name="그룹 3" transform="translate(1)">
+      <g id="그룹_2" data-name="그룹 2" transform="translate(14 8)">
+        <g id="그룹_1" data-name="그룹 1">
+          <circle id="타원_1" data-name="타원 1" cx="25" cy="25" r="25" transform="translate(241 355)"/>
+          <g id="home-Filled" transform="translate(251.5 364.494)">
+            <path id="home-Filled-2" data-name="home-Filled" d="M26.5,13.7v7.884a5.807,5.807,0,0,1-5.684,5.923H17.658V21.583a3.161,3.161,0,1,0-6.316,0v5.923H8.184A5.807,5.807,0,0,1,2.5,21.583V13.7A5.989,5.989,0,0,1,4.62,9.092L10.935,3.8a5.542,5.542,0,0,1,7.128,0l6.316,5.288A5.986,5.986,0,0,1,26.5,13.7Z" transform="translate(0)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
