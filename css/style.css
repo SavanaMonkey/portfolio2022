@@ -337,6 +337,12 @@ a {cursor: none;}
     border-radius: 9999px;
 }
 
+#all_personal a, #all_team a {
+    font-family: 'Pretendard-Regular';
+    letter-spacing : 0.1vmax;
+    word-spacing : -0.2vmax;
+}
+
 @media screen and (min-width : 1024px) {
     #all_personal a, #all_team a {
         display: block;
@@ -471,7 +477,7 @@ ul li:hover ~ .cursor { transform: scale(5); }
         font-size: 0.75rem !important;
         line-height: 1.4rem !important;
         padding-top: 0 !important;
-        font-size: 12px !important;
+        font-size: 10px !important;
         background: black !important;
         overflow: hidden;
         color: white;

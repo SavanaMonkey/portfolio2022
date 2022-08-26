@@ -6,14 +6,6 @@
     font-style: normal;
 }
 
-/* Y이드스트릿 */
-@font-face {
-    font-family: 'YdestreetB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*프리텐다드*/
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -214,7 +206,7 @@ ul li:hover ~ .cursor { transform: scale(5); }
         font-size: 0.75rem !important;
         line-height: 1.4rem !important;
         padding-top: 0 !important;
-        font-size: 12px !important;
+        font-size: 10px !important;
         background: black !important;
         overflow: hidden;
         color: white;
