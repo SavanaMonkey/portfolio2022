@@ -183,6 +183,23 @@ ul li:hover ~ .cursor { transform: scale(5); }
     .sarajo {
         display: none;
     }
+
+    .cursor{
+        display: none;
+    }
+
+    *{
+        cursor: default;
+    }
+
+    p {
+        cursor:default;
+    }
+
+    a, a img, a p, div a, a div{
+        cursor: pointer;
+    }
+
 }
 
 @media screen and  (max-width : 500px)  {

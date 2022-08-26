@@ -317,7 +317,11 @@ a {cursor: none;}
 #all_personal {
     position: relative;
     width: 100%;
-    height: 50vh;
+}
+
+#all_personal div p, #all_team div p {
+    font-size: max(1.4vmax,  20px);
+    line-height: max(2.2vmax,  30px);
 }
 
 .updateNotice {
@@ -331,6 +335,19 @@ a {cursor: none;}
     line-height: 58px;
     background-color: #eee;
     border-radius: 9999px;
+}
+
+@media screen and (min-width : 1024px) {
+    #all_personal a, #all_team a {
+        display: block;
+        margin: 1vmin;
+    }
+}
+@media screen and (max-width : 1024px) {
+    #all_personal a, #all_team a {
+        display: block;
+        margin-block: 1vmin;
+    }
 }
 
 @media screen and (max-width : 1080px) {
@@ -388,6 +405,12 @@ a {cursor: none;}
 }
 
 
+/*마우스커서 반전*/
+.cursor { z-index: 9999; position: fixed; width: 20px; height: 20px; border-radius: 50%; background: #eee; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
+ul li:hover ~ .cursor { transform: scale(5); }
+.zoom:hover ~ .cursor { transform: scale(5) !important;}
+
+
 /*디자인요소 미디어쿼리*/
 
 /*가로기준*/
@@ -417,6 +440,23 @@ a {cursor: none;}
     .sarajo {
         display: none;
     }
+
+    .cursor{
+        display: none;
+    }
+
+    *{
+        cursor: default;
+    }
+
+    p {
+        cursor:default;
+    }
+
+    a, a img, a p, div a, a div{
+        cursor: pointer;
+    }
+
 }
 
 @media screen and  (max-width : 500px)  {
@@ -478,9 +518,3 @@ a {cursor: none;}
         display: none;
     }
 }
-
-
-/*마우스커서 반전*/
-.cursor { z-index: 9999; position: fixed; width: 20px; height: 20px; border-radius: 50%; background: #eee; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
-ul li:hover ~ .cursor { transform: scale(5); }
-.zoom:hover ~ .cursor { transform: scale(5) !important;}
