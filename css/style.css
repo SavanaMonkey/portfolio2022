@@ -311,6 +311,8 @@ a {cursor: none;}
   .navBox {
     width: 88px;
     height: 94px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
     background: rgba(255, 255, 255, 0.1);
 }
 
