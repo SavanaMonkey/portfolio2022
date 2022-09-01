@@ -108,7 +108,7 @@ a {cursor: none;}
     width: max(80%, 10px);
 }
 
-.time, .skill, .duty, .prime {
+.time, .skill, .duty {
     font-size: max(1.3vmax, 16px);
 }
 
@@ -118,9 +118,26 @@ a {cursor: none;}
     margin-top: 4vh;
 }
 
-/* .prime p {
-    font-size: 16px;
-} */
+.prime {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: max(80%, 10px);
+}
+
+.prime_about {
+    width: max-content;
+    font-size: max(0.9vmax, 12px);
+    padding: 6px;
+    padding-inline: 14px;
+    border-radius: 300px;
+    margin-right: 8px;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+    background-color: #820826;
+    color: white;
+}
 
 .pdf {  
     font-family: 'GmarketSansMedium';
@@ -194,6 +211,16 @@ ul li:hover ~ .cursor { transform: scale(5); }
         cursor: pointer;
     }
 
+    .prime {
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+    }
+
+    .prime_about {
+        margin-right: 0;
+        margin-top: 4px;
+    }
 }
 
 @media screen and  (max-width : 500px)  {
