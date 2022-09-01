@@ -112,6 +112,11 @@ a {cursor: none;}
     font-size: max(1.3vmax, 16px);
 }
 
+.duty span {
+    font-size: max(1vmax, 14px);
+    color: #aaa;
+}
+
 .info {
     font-size: max(1.2vmax, 15px);
     line-height: 1.8em;
