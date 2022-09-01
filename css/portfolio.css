@@ -139,6 +139,25 @@ a {cursor: none;}
     color: white;
 }
 
+.prime_general {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    font-size: max(0.9vmax, 12px);
+    padding: 6px;
+    padding-inline: 14px;
+    border-radius: 300px;
+    margin-right: 8px;
+    font-family: 'Pretendard-Regular';
+    text-align: center;
+    background-color: goldenrod;
+}
+
+.prime_general img {
+    width: max(30%, 16px);
+    margin-right: 4px;
+}
+
 .pdf {  
     font-family: 'GmarketSansMedium';
     width: 120px;
