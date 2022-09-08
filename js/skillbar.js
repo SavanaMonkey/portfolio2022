@@ -6,7 +6,7 @@ $(function(){
             $('#photoshop').addClass("ani_80");
             $('#illustrator').addClass("ani_70");
             $('#xd').addClass("ani_80");
-            $('#figma').addClass("ani_60");
+            $('#figma').addClass("ani_70");
             $('#HnC').addClass("ani_70");
             $('#js').addClass("ani_50");
             $('#jquery').addClass("ani_50");
@@ -62,7 +62,7 @@ $(function(){
                 })
 
                 /*Figma*/
-                $({val: 0 /*시작 숫자*/}).animate({val: 60 /*최종숫자*/}, {
+                $({val: 0 /*시작 숫자*/}).animate({val: 70 /*최종숫자*/}, {
                     duration: 1600 /*숫자 올라가는 시간*/ ,
                     step: function () {
                         num = numberWithCommas(Math.floor(this.val));
