@@ -1,261 +1,257 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
-    <title>뮤직앱 UI/UX 디자인 - 그루브</title>
-    
-    <!--슬라이드-->
-    <script src="../js/jquery-3.6.0.min.js"></script>
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-        <!--스타일--> 
-        <link rel="stylesheet" href="../css/portfolio.css">
-        <link rel="stylesheet" href="../css/slide_style">
-        <style>
-            body {
-              background: #eee;
-              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-              font-size: 14px;
-              color: #000;
-              margin: 0;
-              padding: 0;
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
+  <title>뮤직앱 UI/UX 디자인 - 그루브</title>
 
-            .swiper {
-              width: 60%;
-              height: 100%;
-            }
+  <!--슬라이드-->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!--스타일-->
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <link rel="stylesheet" href="../css/slide_style">
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-            .swiper-slide {
-              text-align: center;
-              font-size: 18px;
-              background: #fff;
+    .swiper {
+      width: 60%;
+      height: 100%;
+    }
 
-              /* Center slide text vertically */
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: -webkit-flex;
-              display: flex;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              -webkit-justify-content: center;
-              justify-content: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              -webkit-align-items: center;
-              align-items: center;
-            }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
 
-            .swiper-slide img {
-              display: block;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
 
-            .swiper {
-              width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-            }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-            .swiper-slide {
-              background-size: cover;
-              background-position: center;
-            }
+    .swiper {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-            /* 위에 사진 높이 */
-            .mySwiper2 {
-              width: 60%;
-            }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
 
-          @media screen and (max-width : 720px)  {
-            .mySwiper2 {
-              width: 80%;
-            }
-          }
+    /* 위에 사진 높이 */
+    .mySwiper2 {
+      width: 60%;
+    }
 
-            /* 아래 사진 높이 */
-            .mySwiper {
-              height: 7vw;
-              box-sizing: border-box;
-              padding: 10px 0;
-              margin-bottom: 2vh;
-            }
+    @media screen and (max-width : 720px) {
+      .mySwiper2 {
+        width: 80%;
+      }
+    }
 
-            .mySwiper .swiper-slide {
-              width: 25%;
-              height: 100%;
-              opacity: 0.4;
-            }
+    /* 아래 사진 높이 */
+    .mySwiper {
+      height: 7vw;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin-bottom: 2vh;
+    }
 
-            .mySwiper .swiper-slide-thumb-active {
-              opacity: 1;
-            }
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
 
-            .swiper-slide img {
-              display: block;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
 
-            .slideBoxO {
-              margin-top: 2vh;
-            }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-            .swiper-button-next, .swiper-button-prev {
-              background-color: rgba(0, 0, 0, 0.3);
-            }
-        </style>
+    .slideBoxO {
+      margin-top: 2vh;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-    <!--디자인요소-->
-    <section class="mx-auto mb-32">
-        <!-- left -->
-        <div class="fixed left-8 top-8 z-50 left_item">
-            <a href="../index.html"><img src="../images/home3.svg" width="60px"></a>
+  <!--디자인요소-->
+  <section class="mx-auto mb-32">
+    <!-- left -->
+    <div class="fixed left-8 top-8 z-50 left_item">
+      <a href="../index.html"><img src="../images/home3.svg" width="60px"></a>
+    </div>
+    <!-- Line(L)-->
+    <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
+    <!-- iCon -->
+    <div class="fixed left-10 bottom-12 text-center contact_icon">
+      <a href="tel:010-9971-2081"><img src="../images/call.svg" class="mb-4 contactBt"></a>
+      <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="../images/kakaotalk.svg"
+          class="contactBt"></a>
+    </div>
+    <!-- right -->
+    <div class="fixed right-6 top-6 z-50 nav_prt">
+      <a>
+        <div class="text-center text-xl font-bold border-2 border-black py-2 navBox" onClick="history.go(-1)">
+          <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
+          <p class="py-1 navWhere">BACK</p>
         </div>
-        <!-- Line(L)-->
-        <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
-        <!-- iCon -->
-        <div class="fixed left-10 bottom-12 text-center contact_icon">
-          <a href="tel:010-9971-2081"><img src="../images/call.svg" class="mb-4 contactBt"></a>
-          <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="../images/kakaotalk.svg" class="contactBt"></a>
+      </a>
+    </div>
+    <!--Line(R)-->
+    <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+
+    <!-- grid container -->
+    <div class="container p-10 mx-auto contBox">
+      <div class="p title">뮤직앱 UI/UX 설계 및 디자인 - 그루브</div>
+      <!-- item card -->
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2 slideBoxO">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video controls>
+              <source src="../images/groove/groove_ucc.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_title.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/groove/groove_6.jpg" />
+          </div>
         </div>
-        <!-- right -->
-        <div class="fixed right-6 top-6 z-50 nav_prt">
-          <a>
-            <div class="text-center text-xl font-bold border-2 border-black py-2 navBox" onClick="history.go(-1)">
-              <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
-              <p class="py-1 navWhere">BACK</p>
-            </div>
-          </a>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div thumbsSlider="" class="swiper mySwiper sarajo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_thb.jpg"></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_title.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_1.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_2.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_4.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_5.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/groove/groove_6.jpg" /></a>
+          </div>
         </div>
-        <!--Line(R)-->
-        <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+      </div>
 
-        <!-- grid container -->
-        <div class="container p-10 mx-auto contBox">
-            <div class="p title">뮤직앱 UI/UX 설계 및 디자인 - 그루브</div>
-                <!-- item card -->
-                <div
-                style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;"
-                class="swiper mySwiper2 slideBoxO"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <video controls>
-                      <source src="../images/groove/groove_ucc.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_title.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_1.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_2.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_3.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_4.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_5.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_6.jpg" />
-                  </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
+      <!--프로젝트 내용-->
+      <div class="infoBox">
+        <div class=" pret time"><b>· 개발기간</b> : 2022. 02. 07 ~ 2022. 03. 18</div>
+        <div class=" pret skill"><b>· 적용기술</b> : Adobe XD, Adobe Illustrator, Adobe Photoshop ···</div>
+        <div class=" pret info">
+          &nbsp; 트랜디하고 미니멀한 감각을 살린 아이폰 규격의 뮤직 플레이어 앱 UI/UX를 디자인했습니다. 밝은 낮 시간대는 물론 밤이나 어두운 장소에서도 눈에 부담이 가지 않도록
+          전체적으로 어두운 보랏빛 컬러를 사용했으며, 채도와 명도가 높은 자주색을 포인트 컬러로 채택해 자칫 텁텁할 수 있는 분위기를 환기하도록 했습니다. 가사 모드, 노래방 모드, EQ설정과 같은
+          다양한 동적 구현에 있어 최대한 실제 사용감과 동일하게 표현하기 위해 프로토타입을 세심하게 제작했습니다.
+        </div>
 
-              <div thumbsSlider="" class="swiper mySwiper sarajo">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_thb.jpg"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_title.jpg" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_1.jpg" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_2.jpg" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../images/groove/groove_3.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_4.jpg" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_5.jpg" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a><img src="../images/groove/groove_6.jpg" /></a>
-                  </div>
-                </div>
-              </div>
-                
-                <!--프로젝트 내용-->
-                <div class="infoBox">
-                    <div class=" pret time"><b>· 개발기간</b> : 2022. 02. 07 ~ 2022. 03. 18</div>
-                    <div class=" pret skill"><b>· 적용기술</b> : Adobe XD, Adobe Illustrator, Adobe Photoshop ···</div>
-                    <div class=" pret info">
-                      &nbsp; 트랜디하고 미니멀한 감각을 살린 아이폰 규격의 뮤직 플레이어 앱 UI/UX를 디자인했습니다. 밝은 낮 시간대는 물론 밤이나 어두운 장소에서도 눈에 부담이 가지 않도록 
-                      전체적으로 어두운 보랏빛 컬러를 사용했으며, 채도와 명도가 높은 자주색을 포인트 컬러로 채택해 자칫 텁텁할 수 있는 분위기를 환기하도록 했습니다.  가사 모드, 노래방 모드, EQ설정과 같은
-                      다양한 동적 구현에 있어 최대한 실제 사용감과 동일하게 표현하기 위해 프로토타입을 세심하게 제작했습니다.
-                      </div>
-
-                <!--프로젝트 자료-->
-                <a href="https://1drv.ms/b/s!AmmjlijRyOCztDeeDeTQWIi5wsay" target="_blank"><div class="mb-4 pdf"> 보고서 보기 </div></a>
-              </div>
-            </div>
+        <!--프로젝트 자료-->
+        <a href="https://1drv.ms/b/s!AmmjlijRyOCztDeeDeTQWIi5wsay" target="_blank">
+          <div class="mb-4 pdf"> 보고서 보기 </div>
+        </a>
+      </div>
+    </div>
 
 
-    </section>
+  </section>
 
-<!--마우스커서-->
-<div class="cursor"></div>
+  <!--마우스커서-->
+  <div class="cursor"></div>
 
 
-<script src="../js/cursor.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/cursor.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true
-});
-var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 10,
-    navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-    },
-    thumbs: {
-    swiper: swiper
-    }
-});
-</script>
-<script src="../js/slideW.js"></script>
-<script src="../js/thumb_script.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      thumbs: {
+        swiper: swiper
+      }
+    });
+  </script>
+  <script src="../js/slideW.js"></script>
+  <script src="../js/thumb_script.js"></script>
 </body>
 
 </html>
