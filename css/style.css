@@ -1,528 +1,565 @@
 /*강원단감*/
 @font-face {
-    font-family: 'CWDangamAsac-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "CWDangamAsac-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*프리텐다드*/
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*공고딕*/
 @font-face {
-    font-family: 'GongGothicMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-* {margin: 0; padding: 0; box-sizing: border-box; word-break: keep-all; cursor: none;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+  cursor: none;
+}
 
-a {cursor: none;}
+a {
+  cursor: none;
+}
 
 .scrollTitle {
-    position:relative;
-    width: 100; 
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
+  position: relative;
+  width: 100;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
 }
 
 .scrollTitle div {
-    position: relative;
-    width: 50%;
-    background: #820826;
-    overflow: hidden;
+  position: relative;
+  width: 50%;
+  /* background: #820826; */
+  background: url(https://source.unsplash.com/random/?wall);
+  overflow: hidden;
 }
 
 .scrollTitle div:nth-child(1) {
-    position: relative;
-    width: 50%;
-    background: url(../images/pro_pic.jpg);
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
+  position: relative;
+  width: 50%;
+  background: url(https://source.unsplash.com/random/?Texture);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
 }
 
 .scrollTitle div:nth-child(1) h2 {
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #fff;
-    -webkit-text-fill-color: transparent;
-    left: 100%;
-    font-family: 'CWDangamAsac-Bold';
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: transparent;
+  left: 100%;
+  font-family: "CWDangamAsac-Bold";
 }
 
-.scrollTitle div h2 { 
-    position: absolute;
-    white-space: nowrap;
-    font-size: max(12vmax, 60px);
-    line-height: 100vh;
-    color: #fff;
-    animation: animate 50s linear infinite;
-    font-family: 'CWDangamAsac-Bold';
+.scrollTitle div h2 {
+  position: absolute;
+  white-space: nowrap;
+  font-size: max(12vmax, 60px);
+  line-height: 100vh;
+  color: #fff;
+  animation: animate 50s linear infinite;
+  font-family: "CWDangamAsac-Bold";
 }
 
 @keyframes animate {
-    0% { transform:  translateX(0) ; }  
-    100% { transform:  translateX(-100%) ; } 
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
 
 /* 프로필 */
 
 .profile {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .profile_L {
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 100vh;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100vh;
 }
 
 .idBox {
-    width: max(50%, 300px);
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+  width: max(50%, 300px);
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
 }
 
 .whoAmI {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100vh;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100vh;
 }
 
-.hi_R{
-    width: 100%;
-    text-align: right;
+.hi_R {
+  width: 100%;
+  text-align: right;
 }
 
-.hi_L, .hi_R {
-    font-family: 'GongGothicMedium';
-    font-size: max(3.2vmax, 34px);
-    width: 100%;
-    text-align: center;
+.hi_L,
+.hi_R {
+  font-family: "GongGothicMedium";
+  font-size: max(3.2vmax, 34px);
+  width: 100%;
+  text-align: center;
 }
 
-.hi_L::first-letter, .hi_R::first-letter {
-    color: #820826;
+.hi_L::first-letter,
+.hi_R::first-letter {
+  color: #820826;
 }
 
 .resume_notice {
-    margin-top: 5em;
-    font-size: 16px;
+  margin-top: 5em;
+  font-size: 16px;
 }
 
 .go_to_resume {
-    font-size: 18px;
-    color: white;
-    width: 220px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 30px;
-    background-color: black;
+  font-size: 18px;
+  color: white;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 30px;
+  background-color: black;
 }
 
 .introduce {
-    position: absolute;
-    width: 50%;
-    min-width: 266px;
-    height: auto;
-    padding-block: 5%;
-    top: 50%;
-    left: 40%;
-    text-align: center;
-    font-size: max(1.2vmax, 16px);
-    line-height: 2em;
-    transform: translate(-50%, -50%);
-    font-family: 'Pretendard-Regular';
+  position: absolute;
+  width: 50%;
+  min-width: 266px;
+  height: auto;
+  padding-block: 5%;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  font-size: max(1.2vmax, 16px);
+  line-height: 2em;
+  transform: translate(-50%, -50%);
+  font-family: "Pretendard-Regular";
 }
 
-@media screen and (max-width : 860px) {
-    .profile {
-        height: max(100vh, 1024px) !important;
-        padding-block: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
-        height: max-content;
-    }
-
-    .profile_L {
-        position: inherit;
-        width: 100%;
-        height: 40%;
-    }
-
-    .idBox {
-        width: max(35%, 260px);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .hi_L, .hi_R {
-        min-width: 270px;
-    }
-
-    .whoAmI {
-        position: relative;
-        width: 100%;
-        height: 40%;
-        padding-bottom: 10vmin;
-    }
-
-    .introduce {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-
-/* 스킬게이지 */
-
-.Skills {
-    width: 100%;
-    height: fit-content;
-    padding-inline: 8rem;
-    padding-bottom: 5vmin;
-    font-family: 'Pretendard-Regular';
-    background-color: black;
-}
-
-.skillTitle {
-    font-family: 'CWDangamAsac-Bold';
-    color: white;
-    font-weight: 600;
-    font-size: max(5vw, 28px);
-    padding-block: 6vmin;
-
-}
-
-.skillTab {
-    font-family: 'Pretendard-Regular';
-    font-size: max(2.4vmax, 28px);
-    line-height: 100%;
-}
-
-.whatSkill {
-    font-family: 'Pretendard-Regular';
-}
-
-.skillCont {
+@media screen and (max-width: 860px) {
+  .profile {
+    height: max(100vh, 1024px) !important;
+    padding-block: 10vh;
     display: flex;
-    flex-direction: row;    
-}
-
-.skill_R {
-    margin-left: 1.25rem;
     flex-direction: column;
-}
-
-.skill_L {
-    margin-right: 1.25rem;
-    flex-direction: column;
-}
-
-.skill_R, .skill_L {
-    width: 50%;
-    padding: 4vmin;
-}
-
-@media screen and (max-width : 860px) {
-    .skillCont {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .skillTitle {
-        padding-block: 12vmin;
-    }
-}
-
-
-/*포트폴리오*/
-
-#portfolio {
-    width: 100%;
+    justify-content: space-evenly;
     height: max-content;
-    padding-top: 10vh;
-}
+  }
 
-.folio_title {
+  .profile_L {
+    position: inherit;
     width: 100%;
-    text-align: center;
-    margin-bottom: 15vh;
-    margin-top: 8vh;
-    font-size: max(3vmax, 34px);
-    font-weight: 600;
-    font-family: 'Pretendard-Regular';
-}
+    height: 40%;
+  }
 
-.folio_tabBox {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Pretendard-Regular';
-}
-
-.btnCon {
-    position: relative;
-    font-size: max(2vmax, 17px);
-    line-height: 100%;
-    text-align: center;
-    padding-block: 10px;
-    border-bottom: 1px solid black;
-    margin-bottom: 80px;
-    width: 100vh;
-}
-
-   .tab_item {
-       /*a태그에 너비를 주려면 display:block 해주면 됨*/
-       display: block;
-       width: 100%;
-   }
-
-   #Team {
-       background: black;
-       color: white;
-   }
-
-   .btnCon:hover {
-       background: #820826 !important;
-       color: white !important;
-   }
-
-  .navBox {
-    width: 88px;
-    height: 94px;
-    font-family: 'Pretendard-Regular';
-    font-weight: 600;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-#all_personal {
-    position: relative;
-    width: 100%;
-}
-
-#all_personal div p, #all_team div p {
-    font-size: max(1.4vmax,  20px);
-    line-height: max(2.2vmax,  30px);
-}
-
-.updateNotice {
+  .idBox {
+    width: max(35%, 260px);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(80%, 300px);
-    height: 60px;
+  }
+
+  .hi_L,
+  .hi_R {
+    min-width: 270px;
+  }
+
+  .whoAmI {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding-bottom: 10vmin;
+  }
+
+  .introduce {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 스킬게이지 */
+
+.Skills {
+  width: 100%;
+  height: fit-content;
+  padding-inline: 8rem;
+  padding-bottom: 5vmin;
+  font-family: "Pretendard-Regular";
+  background-color: black;
+}
+
+.skillTitle {
+  font-family: "CWDangamAsac-Bold";
+  color: white;
+  font-weight: 600;
+  font-size: max(5vw, 28px);
+  padding-block: 6vmin;
+}
+
+.skillTab {
+  font-family: "Pretendard-Regular";
+  font-size: max(2.4vmax, 28px);
+  line-height: 100%;
+}
+
+.whatSkill {
+  font-family: "Pretendard-Regular";
+}
+
+.skillCont {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill_R {
+  margin-left: 1.25rem;
+  flex-direction: column;
+}
+
+.skill_L {
+  margin-right: 1.25rem;
+  flex-direction: column;
+}
+
+.skill_R,
+.skill_L {
+  width: 50%;
+  padding: 4vmin;
+}
+
+@media screen and (max-width: 860px) {
+  .skillCont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillTitle {
+    padding-block: 12vmin;
+  }
+}
+
+/*포트폴리오*/
+
+#portfolio {
+  width: 100%;
+  height: max-content;
+  padding-top: 10vh;
+}
+
+.folio_title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15vh;
+  margin-top: 8vh;
+  font-size: max(3vmax, 34px);
+  font-weight: 600;
+  font-family: "Pretendard-Regular";
+}
+
+.folio_tabBox {
+  display: flex;
+  flex-direction: row;
+  font-family: "Pretendard-Regular";
+}
+
+.btnCon {
+  position: relative;
+  font-size: max(2vmax, 17px);
+  line-height: 100%;
+  text-align: center;
+  padding-block: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 80px;
+  width: 100vh;
+}
+
+.tab_item {
+  /*a태그에 너비를 주려면 display:block 해주면 됨*/
+  display: block;
+  width: 100%;
+}
+
+#Team {
+  background: black;
+  color: white;
+}
+
+.btnCon:hover {
+  background: #820826 !important;
+  color: white !important;
+}
+
+.navBox {
+  width: 88px;
+  height: 94px;
+  font-family: "Pretendard-Regular";
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#all_personal {
+  position: relative;
+  width: 100%;
+}
+
+#all_personal div p,
+#all_team div p {
+  font-size: max(1.4vmax, 20px);
+  line-height: max(2.2vmax, 30px);
+}
+
+.updateNotice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(80%, 300px);
+  height: 60px;
+  text-align: center;
+  line-height: 58px;
+  background-color: #eee;
+  border-radius: 9999px;
+}
+
+#all_personal a,
+#all_team a {
+  font-family: "Pretendard-Regular";
+  letter-spacing: 0.1vmax;
+  word-spacing: -0.2vmax;
+}
+
+@media screen and (min-width: 1024px) {
+  #all_personal a,
+  #all_team a {
+    display: block;
+    margin: 1vmin;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #all_personal a,
+  #all_team a {
+    display: block;
+    margin-block: 1vmin;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Skills {
+    flex-direction: column;
+    padding-inline: 0rem;
     text-align: center;
-    line-height: 58px;
-    background-color: #eee;
-    border-radius: 9999px;
+    margin: 0 auto;
+  }
+
+  .skill_L,
+  .skill_R {
+    margin-inline: 0rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .whatSkill {
+    font-size: max(2rem, 18px);
+    text-align: left;
+  }
+
+  .portfolio {
+    flex-direction: column;
+  }
 }
-
-#all_personal a, #all_team a {
-    font-family: 'Pretendard-Regular';
-    letter-spacing : 0.1vmax;
-    word-spacing : -0.2vmax;
-}
-
-@media screen and (min-width : 1024px) {
-    #all_personal a, #all_team a {
-        display: block;
-        margin: 1vmin;
-    }
-}
-@media screen and (max-width : 1024px) {
-    #all_personal a, #all_team a {
-        display: block;
-        margin-block: 1vmin;
-    }
-}
-
-@media screen and (max-width : 1080px) {
-    .Skills {
-        flex-direction: column;
-        padding-inline: 0rem;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .skill_L, .skill_R {
-        margin-inline: 0rem;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .whatSkill {
-        font-size: max(2rem, 18px);
-        text-align: left    ;
-    }
-
-    .portfolio {
-        flex-direction: column;
-    }
-}
-
 
 /*푸터*/
 
 #footer {
-    width: 100%;
-    height: 50vh;
-    background-color: #820826;
+  width: 100%;
+  height: 50vh;
+  background-color: #820826;
 }
 
 .ed {
-    font-family: 'Pretendard-Regular';
-    font-weight: 200;
-    font-size: 15px;
-    text-align: center;
-    color: #ccc;
-    padding-top: 10vh;
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  font-size: 15px;
+  text-align: center;
+  color: #ccc;
+  padding-top: 10vh;
 }
-
 
 /*디자인 요소 스타일*/
 
 .nav_prt {
-    font-family: "helvetica Neue";
-    font-size: 20px;
+  font-family: "helvetica Neue";
+  font-size: 20px;
 }
 
 .contactBt {
-    width: max(2vw, 40px);
+  width: max(2vw, 40px);
 }
 
-
 /*마우스커서 반전*/
-.cursor { z-index: 9999; position: fixed; width: 20px; height: 20px; border-radius: 50%; background: #eee; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
-ul li:hover ~ .cursor { transform: scale(5); }
-.zoom:hover ~ .cursor { transform: scale(5) !important;}
-
+.cursor {
+  z-index: 9999;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #eee;
+  transition: transform 0.2s;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+ul li:hover ~ .cursor {
+  transform: scale(5);
+}
+.zoom:hover ~ .cursor {
+  transform: scale(5) !important;
+}
 
 /*디자인요소 미디어쿼리*/
 
 /*가로기준*/
 
-@media screen and (max-width : 840px) {
-    .navBox {
-        width: 64px;
-        height: 68px;
-        font-size: 1rem !important;
-        line-height: 1.4rem !important;
-        padding-top: 0 !important;
-    }
+@media screen and (max-width: 840px) {
+  .navBox {
+    width: 64px;
+    height: 68px;
+    font-size: 1rem !important;
+    line-height: 1.4rem !important;
+    padding-top: 0 !important;
+  }
 
-    .left_item a img {
-        width: 50px;
-    }
+  .left_item a img {
+    width: 50px;
+  }
 }
 
-@media screen and (max-width : 720px)  {
-    .title {
-        width: 70%;
-    }
-    .fix_borderL, .fix_borderR {
-        display: none;
-    }
+@media screen and (max-width: 720px) {
+  .title {
+    width: 70%;
+  }
+  .fix_borderL,
+  .fix_borderR {
+    display: none;
+  }
 
-    .sarajo {
-        display: none;
-    }
+  .sarajo {
+    display: none;
+  }
 
-    .cursor{
-        display: none;
-    }
+  .cursor {
+    display: none;
+  }
 
-    *{
-        cursor: default;
-    }
+  * {
+    cursor: default;
+  }
 
-    p {
-        cursor:default;
-    }
+  p {
+    cursor: default;
+  }
 
-    a, a img, a p, div a, a div{
-        cursor: pointer;
-    }
-
+  a,
+  a img,
+  a p,
+  div a,
+  a div {
+    cursor: pointer;
+  }
 }
 
-@media screen and  (max-width : 500px)  {
-    .left_item a img {
-        width: 40px;
-    }
+@media screen and (max-width: 500px) {
+  .left_item a img {
+    width: 40px;
+  }
 
-    .navBox {
-        margin-top: 8px;
-        width: 40px;
-        height: 40px;
-        font-size: 0.75rem !important;
-        line-height: 1.4rem !important;
-        padding-top: 0 !important;
-        font-size: 10px !important;
-        background: black !important;
-        overflow: hidden;
-        color: white;
-        border-radius: 8px;
-    }
-    .navP {
-        display: none;
-    }
+  .navBox {
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 0.75rem !important;
+    line-height: 1.4rem !important;
+    padding-top: 0 !important;
+    font-size: 10px !important;
+    background: black !important;
+    overflow: hidden;
+    color: white;
+    border-radius: 8px;
+  }
+  .navP {
+    display: none;
+  }
 
-    .left_item {
-        left: 1.4rem !important;
-    }
+  .left_item {
+    left: 1.4rem !important;
+  }
 
-    .contact_icon {
-        left: 1.4rem !important;
-    }
+  .contact_icon {
+    left: 1.4rem !important;
+  }
 
-    .nav_prt{
-        right: 1.4rem !important;
-    }
+  .nav_prt {
+    right: 1.4rem !important;
+  }
 
-    .navWhere {
-        line-height: 29px;
-    }
+  .navWhere {
+    line-height: 29px;
+  }
 }
 
-@media screen and (max-width : 360px)  {
-    .left_item {
-        left: 1rem !important;  
-    }
+@media screen and (max-width: 360px) {
+  .left_item {
+    left: 1rem !important;
+  }
 
-    .contactBt {
-        left: 1rem !important;
-    }
+  .contactBt {
+    left: 1rem !important;
+  }
 
-    .nav_prt{
-        right: 1rem !important;
-    }
+  .nav_prt {
+    right: 1rem !important;
+  }
 }
 
 /*세로기준*/
-@media screen and (max-height : 640px) {
-    .fix_borderL, .fix_borderR {
-        display: none;
-    }
+@media screen and (max-height: 640px) {
+  .fix_borderL,
+  .fix_borderR {
+    display: none;
+  }
 }
