@@ -48,18 +48,19 @@ a {
 .scrollTitle div {
   position: relative;
   width: 50%;
-  /* background: #820826; */
-  background: url(https://source.unsplash.com/random/?wall);
   overflow: hidden;
+  background: url(https://source.unsplash.com/random/?wall);
+  background-size: cover;
+  background-position: center;
 }
 
 .scrollTitle div:nth-child(1) {
   position: relative;
   width: 50%;
   background: url(https://source.unsplash.com/random/?Texture);
+  background-position: center;
   background-size: cover;
   overflow: hidden;
-  background-position: center;
 }
 
 .scrollTitle div:nth-child(1) h2 {
@@ -73,10 +74,10 @@ a {
 .scrollTitle div h2 {
   position: absolute;
   white-space: nowrap;
-  font-size: max(12vmax, 60px);
+  font-size: max(10vmax, 48px);
   line-height: 100vh;
   color: #fff;
-  animation: animate 50s linear infinite;
+  animation: animate 35s linear infinite;
   font-family: "CWDangamAsac-Bold";
 }
 

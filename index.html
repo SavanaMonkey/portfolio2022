@@ -7,213 +7,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/slide.js"></script>
+    <script src='./dist/color-thief.umd.js'></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>I'm SooYeon Kim</title>
     <link rel="stylesheet" href="./css/skillbar.css">
+    <link rel="stylesheet" href="./css/skillbar.css">
+    <title>I'm SooYeon Kim</title>
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 
-<!--타이틀-->
-<section class="scrollTitle bg-pu">
-    <div>
-        <h2>Hello World! UI/UX 디자인과 퍼블리싱이 가능한 멀티플 PM지망생 김수연 입니다.</h2>
-    </div>
-    <div>
-        <h2>Hello World! UI/UX 디자인과 퍼블리싱이 가능한 멀티플 PM지망생 김수연 입니다.</h2>
-    </div>
-</section>
-    
+    <!--타이틀-->
+    <section class="scrollTitle bg-pu">
+        <div id='title_1'>
+            <!-- <img src='https://source.unsplash.com/random/?Texture'> -->
+            <h2>UI/UX 디자인과 퍼블리싱이 가능한 멀티플 PM지망생 김수연입니다.</h2>
+        </div>
+        <div id='title_2'>
+            <h2>UI/UX 디자인과 퍼블리싱이 가능한 멀티플 PM지망생 김수연입니다.</h2>
+        </div>
+    </section>
 
-<!--프로필-->
-<section class="w-full mx-auto h-screen relative overflow-hidden px-8 profile">
 
-    <!--이력서사진-->
-    <div class="profile_L">
-        <div class="idBox">
-            <div class="decoLine">
-                <p class="hi_L">Good Designer</p>
-            </div>
-            <img class="rounded-full" src="./images/id_pic.jpg">
-            <div>
+    <!--프로필-->
+    <section class="w-full mx-auto h-screen relative overflow-hidden px-8 profile">
+
+        <!--이력서사진-->
+        <div class="profile_L">
+            <div class="idBox">
                 <div class="decoLine">
-                    <p class="hi_R">Next Publisher</p>
+                    <p class="hi_L">Good Designer</p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!--자기소개-->
-    <div class="whoAmI"> 
-        <div class="introduce">
-            <p class="z-0">
-                안녕하세요. 디자인과 퍼블리싱이 가능하며 <br/>
-                남다른 예리함과 디테일을 겸비한 <br/>
-                완벽주의 PM지망생 <b>김수연</b> 입니다. <br/>
-                사용자의 뇌리에 확실히 각인시킬 <br/>
-                유저 친화적 기획이 필요하시다면 <br/>
-                제 이름 세 글자를 꼭 기억해 주세요.
-            </p>
-            <p class="resume_notice">자세한 내용은</p>
-            <a href="./resume.html">
-                <div class="mx-auto go_to_resume">이력서 보러가기</div>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!--스킬 게이지바-->   
-<section class="bg-black Skills">
-    <div class="skillTitle">What can I do?</div> 
-    <div class="skillCont">
-        <div class="h-full skill_L">
-            <div class="border-b border-white text-white mb-6 skillTab">Design</div>
-            <div class="skillWrapper">
-                <div class="skillBar">
-                    <div class="whatSkill">· Adobe Photoshop</div>
-                    <div class="barBody"><div id="photoshop" class="barStick"></div> &nbsp; <div class="howGet photoshop_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· Adobe Illustrator</div>
-                    <div class="barBody"><div id="illustrator" class="barStick"></div> &nbsp; <div class="howGet illustrator_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· Adobe XD</div>
-                    <div class="barBody"><div id="xd" class="barStick"></div> &nbsp; <div class="howGet xd_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· Figma</div>
-                    <div class="barBody"><div id="figma" class="barStick"></div> &nbsp; <div class="howGet figma_num"></div></div>
-                </div>
-            </div>
-
-
-            <div class="border-b border-white text-white mb-6 skillTab">FrontEnd</div>
-            <div class="skillWrapper">
-                <div class="skillBar">
-                    <div class="whatSkill">· HTML5 / CSS3</div>
-                    <div class="barBody"><div id="HnC" class="barStick"></div> &nbsp; <div class="howGet HnC_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· JavaScript</div>
-                    <div class="barBody"><div id="js" class="barStick"></div> &nbsp; <div class="howGet js_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· jQuery</div>
-                    <div class="barBody"><div id="jquery" class="barStick"></div> &nbsp; <div class="howGet jquery_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· TailwindCSS</div>
-                    <div class="barBody"><div id="tailwind" class="barStick"></div> &nbsp; <div class="howGet tailwind_num"></div></div>
+                <img class="rounded-full" src="./images/id_pic.jpg">
+                <div>
+                    <div class="decoLine">
+                        <p class="hi_R">Next Publisher</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="h-full skill_R">
-            <div class="border-b border-white text-white mb-6 skillTab">BackEnd</div>
-            <div class="skillWrapper">
-                <div class="skillBar">
-                    <div class="whatSkill">· MySQL</div>
-                    <div class="barBody"><div id="mysql" class="barStick"></div> &nbsp; <div class="howGet mysql_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· MongoDB</div>
-                    <div class="barBody"><div id="mongodb" class="barStick"></div> &nbsp; <div class="howGet mongodb_num"></div></div>
-                </div>
-            </div>
-            
-            <div class="border-b border-white text-white mb-6 skillTab">Etc</div>
-            <div class="skillWrapper">
-                <div class="skillBar">
-                    <div class="whatSkill">· Video Editing</div>
-                    <div class="barBody"><div id="videoEdt" class="barStick"></div> &nbsp; <div class="howGet videoEdt_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· Reporting</div>
-                    <div class="barBody"><div id="reporting" class="barStick"></div> &nbsp; <div class="howGet reporting_num"></div></div>
-                </div>
-                <div class="skillBar">
-                    <div class="whatSkill">· Painting</div>
-                    <div class="barBody"><div id="painting" class="barStick"></div> &nbsp; <div class="howGet painting_num"></div></div>
+        <!--자기소개-->
+        <div class="whoAmI">
+            <div class="introduce">
+                <p class="z-0">
+                    안녕하세요. 디자인과 퍼블리싱이 가능하며 <br />
+                    남다른 예리함과 디테일을 겸비한 <br />
+                    완벽주의 PM지망생 <b>김수연</b> 입니다. <br />
+                    사용자의 뇌리에 확실히 각인시킬 <br />
+                    유저 친화적 기획이 필요하시다면 <br />
+                    제 이름 세 글자를 꼭 기억해 주세요.
+                </p>
+                <p class="resume_notice">자세한 내용은</p>
+                <a href="./resume.html">
+                    <div class="mx-auto go_to_resume">이력서 보러가기</div>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!--스킬 게이지바-->
+    <section class="bg-black Skills">
+        <div class="skillTitle">What can I do?</div>
+        <div class="skillCont">
+            <div class="h-full skill_L">
+                <div class="border-b border-white text-white mb-6 skillTab">Design</div>
+                <div class="skillWrapper">
+                    <div class="skillBar">
+                        <div class="whatSkill">· Adobe Photoshop</div>
+                        <div class="barBody">
+                            <div id="photoshop" class="barStick"></div> &nbsp; <div class="howGet photoshop_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· Adobe Illustrator</div>
+                        <div class="barBody">
+                            <div id="illustrator" class="barStick"></div> &nbsp; <div class="howGet illustrator_num">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· Adobe XD</div>
+                        <div class="barBody">
+                            <div id="xd" class="barStick"></div> &nbsp; <div class="howGet xd_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· Figma</div>
+                        <div class="barBody">
+                            <div id="figma" class="barStick"></div> &nbsp; <div class="howGet figma_num"></div>
+                        </div>
+                    </div>
+                </div>
 
 
-<!--포트폴리오-->
-<div id="portfolio">
-    <div class="folio_title">Portfolio</div>
-    <section class="w-full mx-auto mb-32">
-        <!-- grid container -->
-        <div class="folioBox container px-8 mx-auto">
-
-            <!--탭버튼-->
-            <div class="folio_tabBox">
-                <div id="Team" class="btnCon"><a class="tab_item">Team Project</a></div>
-                <div id="Personal" class="btnCon"><a class="tab_item">Personal Project</a></div>
+                <div class="border-b border-white text-white mb-6 skillTab">FrontEnd</div>
+                <div class="skillWrapper">
+                    <div class="skillBar">
+                        <div class="whatSkill">· HTML5 / CSS3</div>
+                        <div class="barBody">
+                            <div id="HnC" class="barStick"></div> &nbsp; <div class="howGet HnC_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· JavaScript</div>
+                        <div class="barBody">
+                            <div id="js" class="barStick"></div> &nbsp; <div class="howGet js_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· jQuery</div>
+                        <div class="barBody">
+                            <div id="jquery" class="barStick"></div> &nbsp; <div class="howGet jquery_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· TailwindCSS</div>
+                        <div class="barBody">
+                            <div id="tailwind" class="barStick"></div> &nbsp; <div class="howGet tailwind_num"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!--탭1내용-->
-            <div id="all_team" class="grid grid-cols-1 lg:grid-cols-2 duration-300 tab_content">
-                <!-- item card -->
-                <a href="./portfolio/ghostbooks.html" class="group overflow-hidden relative ">
-                    <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/portfolio3.jpg">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
-                        <p>Open API를 활용한 독립서점(고스트북스)<br/>SNS 마케팅 프로젝트</p>
-                    </div>
-                </a>
-                <!-- // item card -->
-                <!-- item card -->
-                <a href="./portfolio/flagging.html" class="group overflow-hidden relative ">
-                    <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/portfolio2.jpg">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
-                        <p>GPS 인증 스탬프 투어<br/>웹앱 프로젝트</p>
-                        <p>'플래깅(Flagging)'</p>
-                    </div>
-                </a>
-                <!-- // item card -->
-                <!-- item card -->
-                <a href="./portfolio/windmillfox.html" class="group overflow-hidden relative ">
-                    <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/portfolio1.jpg">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
-                        <p>웹게임 프로젝트</p>
-                        <p>'윈드밀팍스'</p>
-                    </div>
-                </a>
-                <!-- // item card -->
-                <!-- item card -->
-                <a href="./portfolio/yg.html" class="group overflow-hidden relative ">
-                    <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/portfolio4.jpg">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
-                        <p>영진직업전문학교 리디지인 및</p>
-                        <p>SNS 로그인 연동 프로젝트</p>
-                    </div>
-                </a>
-                <!-- // item card -->
-                <!-- item card -->
-                <a href="./portfolio/ecoce.html" class="group overflow-hidden relative ">
-                    <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/portfolio5.jpg">
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
-                        <p>탄소저감어플 '에코스(ECOCE)'</p>
-                        <p>UI/UX 설계 및 리디자인</p>
-                    </div>
-                </a>
-                <!-- // item card -->
-            </div>
 
-            <!--탭2내용-->
-            <div id="all_personal" class="grid-cols-1 lg:grid-cols-2 duration-300 tab_content hidden tab_content">
-                <!-- <div class="updateNotice">
+            <div class="h-full skill_R">
+                <div class="border-b border-white text-white mb-6 skillTab">BackEnd</div>
+                <div class="skillWrapper">
+                    <div class="skillBar">
+                        <div class="whatSkill">· MySQL</div>
+                        <div class="barBody">
+                            <div id="mysql" class="barStick"></div> &nbsp; <div class="howGet mysql_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· MongoDB</div>
+                        <div class="barBody">
+                            <div id="mongodb" class="barStick"></div> &nbsp; <div class="howGet mongodb_num"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-b border-white text-white mb-6 skillTab">Etc</div>
+                <div class="skillWrapper">
+                    <div class="skillBar">
+                        <div class="whatSkill">· Video Editing</div>
+                        <div class="barBody">
+                            <div id="videoEdt" class="barStick"></div> &nbsp; <div class="howGet videoEdt_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· Reporting</div>
+                        <div class="barBody">
+                            <div id="reporting" class="barStick"></div> &nbsp; <div class="howGet reporting_num"></div>
+                        </div>
+                    </div>
+                    <div class="skillBar">
+                        <div class="whatSkill">· Painting</div>
+                        <div class="barBody">
+                            <div id="painting" class="barStick"></div> &nbsp; <div class="howGet painting_num"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--포트폴리오-->
+    <div id="portfolio">
+        <div class="folio_title">Portfolio</div>
+        <section class="w-full mx-auto mb-32">
+            <!-- grid container -->
+            <div class="folioBox container px-8 mx-auto">
+
+                <!--탭버튼-->
+                <div class="folio_tabBox">
+                    <div id="Team" class="btnCon"><a class="tab_item">Team Project</a></div>
+                    <div id="Personal" class="btnCon"><a class="tab_item">Personal Project</a></div>
+                </div>
+
+                <!--탭1내용-->
+                <div id="all_team" class="grid grid-cols-1 lg:grid-cols-2 duration-300 tab_content">
+                    <!-- item card -->
+                    <a href="./portfolio/ghostbooks.html" class="group overflow-hidden relative ">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/portfolio3.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                            <p>Open API를 활용한 독립서점(고스트북스)<br />SNS 마케팅 프로젝트</p>
+                        </div>
+                    </a>
+                    <!-- // item card -->
+                    <!-- item card -->
+                    <a href="./portfolio/flagging.html" class="group overflow-hidden relative ">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/portfolio2.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                            <p>GPS 인증 스탬프 투어<br />웹앱 프로젝트</p>
+                            <p>'플래깅(Flagging)'</p>
+                        </div>
+                    </a>
+                    <!-- // item card -->
+                    <!-- item card -->
+                    <a href="./portfolio/windmillfox.html" class="group overflow-hidden relative ">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/portfolio1.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                            <p>웹게임 프로젝트</p>
+                            <p>'윈드밀팍스'</p>
+                        </div>
+                    </a>
+                    <!-- // item card -->
+                    <!-- item card -->
+                    <a href="./portfolio/yg.html" class="group overflow-hidden relative ">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/portfolio4.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                            <p>영진직업전문학교 리디지인 및</p>
+                            <p>SNS 로그인 연동 프로젝트</p>
+                        </div>
+                    </a>
+                    <!-- // item card -->
+                    <!-- item card -->
+                    <a href="./portfolio/ecoce.html" class="group overflow-hidden relative ">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/portfolio5.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                            <p>탄소저감어플 '에코스(ECOCE)'</p>
+                            <p>UI/UX 설계 및 리디자인</p>
+                        </div>
+                    </a>
+                    <!-- // item card -->
+                </div>
+
+                <!--탭2내용-->
+                <div id="all_personal" class="grid-cols-1 lg:grid-cols-2 duration-300 tab_content hidden tab_content">
+                    <!-- <div class="updateNotice">
                     업데이트 중입니다.
                 </div> -->
                     <!-- item card -->
                     <a href="./portfolio/groove.html" class="group overflow-hidden relative ">
-                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/personal1.jpg">
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/personal1.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
                             <p>뮤직앱 UI/UX 설계 및 디자인</p>
                             <p>'그루브(Groove)'</p>
                         </div>
@@ -221,8 +264,10 @@
                     <!-- // item card -->
                     <!-- item card -->
                     <a href="./portfolio/dodum.html" class="group overflow-hidden relative ">
-                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/personal2.jpg">
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/personal2.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
                             <p>스마트 문화 콘텐츠</p>
                             <p>UI/UX 설계 및 디자인</p>
                             <p>'돋움'</p>
@@ -231,8 +276,10 @@
                     <!-- // item card -->
                     <!-- item card -->
                     <a href="./portfolio/figmaF.html" class="group overflow-hidden relative ">
-                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/personal4.jpg">
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/personal4.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
                             <p>Figma 입문기</p>
                             <p>어플리케이션 로그인 프로세스</p>
                         </div>
@@ -240,8 +287,10 @@
                     <!-- // item card -->
                     <!-- item card -->
                     <a href="./portfolio/todolist.html" class="group overflow-hidden relative ">
-                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 " src="./images/personal3.jpg">
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
+                        <img class="group-hover:scale-110 duration-300 group-hover:brightness-50 "
+                            src="./images/personal3.jpg">
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:text-2xl group-hover:font-bold group-hover:z-50 duration-300 text-white text-center">
                             <p>JavaScript를 활용한</p>
                             <p>여행 준비물 체크리스트</p>
                         </div>
@@ -250,58 +299,57 @@
                 </div>
             </div>
 
-        </div>
+    </div>
     </section>
-</div>
+    </div>
 
-<div id="footer">
-    <!-- <div class="sns">
+    <div id="footer">
+        <!-- <div class="sns">
     </div> -->
-    
-    <div class="ed">
-        ⓒ2022 by SooYeon-Kim<br/>
-        for more information, please contact me on this <a href="tel:010-9971-2081" style="color: white;">number</a> or <a href="mailto:ksy9969208@gmail.com" style="color: white;">E-mail.</a><br/>
-        If you want to go to the top, please click this <a href="#"  style="color: white;">Top</a> button.<br/>
-        thank you for reading.
-    </div>
+
+        <div class="ed">
+            ⓒ2022 by SooYeon-Kim<br />
+            for more information, please contact me on this <a href="tel:010-9971-2081" style="color: white;">number</a>
+            or <a href="mailto:ksy9969208@gmail.com" style="color: white;">E-mail.</a><br />
+            If you want to go to the top, please click this <a href="#" style="color: white;">Top</a> button.<br />
+            thank you for reading.
+        </div>
 
 
-<!--디자인요소-->
-<section class="mx-auto mb-32">
-    <!-- left -->
-    <div class="fixed left-8 top-8 z-50 left_item">
-        <a href="./index.html"><img src="./images/home3.svg" width="60px"></a>
-    </div>
-    <!-- Line(L)-->
-    <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
-    <!-- iCon -->
-    <div class="fixed left-10 bottom-12 text-center contact_icon">
-        <a href="tel:010-9971-2081"><img src="./images/call.svg" class="mb-4 contactBt"></a>
-        <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="./images/kakaotalk.svg" class="contactBt"></a>
-    </div>
-    <!-- right -->
-    <div class="fixed right-6 top-6 z-50 nav_prt">
-        <a href="#portfolio">
-            <div class="text-center text-xl font-bold border-2 border-black py-2 navBox">
-                <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
-                <p class="py-1 text-center navWhere">WORKS</p>
+        <!--디자인요소-->
+        <section class="mx-auto mb-32">
+            <!-- left -->
+            <div class="fixed left-8 top-8 z-50 left_item">
+                <a href="./index.html"><img src="./images/home3.svg" width="60px"></a>
             </div>
-        </a>    
-    </div>
-    <!--Line(R)-->
-    <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
-</section>
+            <!-- Line(L)-->
+            <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
+            <!-- iCon -->
+            <div class="fixed left-10 bottom-12 text-center contact_icon">
+                <a href="tel:010-9971-2081"><img src="./images/call.svg" class="mb-4 contactBt"></a>
+                <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="./images/kakaotalk.svg"
+                        class="contactBt"></a>
+            </div>
+            <!-- right -->
+            <div class="fixed right-6 top-6 z-50 nav_prt">
+                <a href="#portfolio">
+                    <div class="text-center text-xl font-bold border-2 border-black py-2 navBox">
+                        <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
+                        <p class="py-1 text-center navWhere">WORKS</p>
+                    </div>
+                </a>
+            </div>
+            <!--Line(R)-->
+            <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+        </section>
 
-<!--마우스커서-->
-<div class="cursor"></div>
+        <!--마우스커서-->
+        <div class="cursor"></div>
 
-<script src="./js/tab.js"></script>
-<script src="./js/skillbar.js"></script>
-<script src="./js/cursor.js"></script>
-
-<script>
-
-</script>
+        <script src="./js/tab.js"></script>
+        <script src="./js/skillbar.js"></script>
+        <script src="./js/cursor.js"></script>
+        <script src='./js/color_Thife.js'></script>
 </body>
 
 </html>
