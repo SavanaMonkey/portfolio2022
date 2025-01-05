@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f4d52d82bf.js" crossorigin="anonymous"></script>
+  <title>웹 러닝액션 게임 - 윈드밀팍스</title>
+
+  <!--슬라이드-->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!--스타일-->
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <link rel="stylesheet" href="../css/slide_style">
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 60%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 위에 사진 높이 */
+    .mySwiper2 {
+      width: 60%;
+    }
+
+    @media screen and (max-width : 720px) {
+      .mySwiper2 {
+        width: 80%;
+      }
+    }
+
+    /* 아래 사진 높이 */
+    .mySwiper {
+      height: 7vw;
+      box-sizing: border-box;
+      padding: 10px 0;
+      margin-bottom: 2vh;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slideBoxO {
+      margin-top: 2vh;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <!--디자인요소-->
+  <section class="mx-auto mb-32">
+    <!-- left -->
+    <div class="fixed left-8 top-8 z-50 left_item">
+      <a href="../index.html"><img src="../images/home3.svg" width="60px"></a>
+    </div>
+    <!-- Line(L)-->
+    <div class="fixed top-40 left-14 w-1 h-1/2 border-r mx-auto border-black fix_borderL"></div>
+    <!-- iCon -->
+    <div class="fixed left-10 bottom-12 text-center contact_icon">
+      <a href="tel:010-9971-2081"><img src="../images/call.svg" class="mb-4 contactBt"></a>
+      <a href="https://open.kakao.com/o/slKSXexe" target="_blank"><img src="../images/kakaotalk.svg"
+          class="contactBt"></a>
+    </div>
+    <!-- right -->
+    <div class="fixed right-6 top-6 z-50 nav_prt">
+      <a>
+        <div class="text-center text-xl font-bold border-2 border-black py-2 navBox" onClick="history.go(-1)">
+          <p class="border-b-2 border-black py-1 w-4/5 m-auto navP">NAV</p>
+          <p class="py-1 navWhere">BACK</p>
+        </div>
+      </a>
+    </div>
+    <!--Line(R)-->
+    <div class="fixed bottom-20 right-14 w-1 h-1/2 border-r mx-auto border-black fix_borderR"></div>
+
+    <!-- grid container -->
+    <div class="container p-10 mx-auto contBox">
+      <div class="p title">(주)웨스트윙 - 퍼블리셔 경력기술서</div>
+      <!-- item card -->
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2 slideBoxO">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing1.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing2.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing3.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing4.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing5.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing6.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing7.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing8.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing9.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing10.jpg" /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div thumbsSlider="" class="swiper mySwiper sarajo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing1.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing2.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing3.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing4.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing5.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing6.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing7.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing8.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing9.jpg" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a><img src="../images/wing/wing10.jpg" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!--프로젝트 내용-->
+      <div class="prime">
+        <div class="prime_about">1년 6개월 근무</div>
+      </div>
+      <div class="infoBox">
+        <div class=" pret time"><b>· 근무기간</b> : 2022. 12 ~ 2024. 04</div>
+        <div class=" pret skill"><b>· 적용기술</b> : HTML5, CSS3, JavaScript, AdobeXD, Adobe Photoshop, 카페24 ···</div>
+        <div class=" pret duty"><b>· 담당직무</b> : 기획 및 설계<span>(70%)</span>, UI/UX 디자인<span>(100%)</span>,
+          웹 퍼블리싱<span>(100%)</span>, 동영상 편집<span>(100%)</span> ···</div>
+        <div class=" pret info">
+          <b>&#40;1&#41; 자사몰 APP 홈 화면 리뉴얼</b><br>
+          - 수행 기간 : 2024.03 ~ 2024.04<br>
+          - 프로젝트 요약 : 자사몰&#40;지브로마트&#41; APP의 홈 화면 개선점 도출 후 디자인 리뉴얼<br>
+          - 참여비율&#40;참여인력&#41; : 100&#37;&#40;1명&#41;<br>
+          - 주요업무 :<br>
+          &#9643; 국내 주요 e커머스 앱과 자사몰의 홈 화면 비교 분석 후 벤치마킹 자료 정리<br>
+          &#9643; Adobe XD를 활용하여 와이어 프레임 설계 후 UI&#47;UX 디자인 제작<br>
+          &#9643; 플러그인 제작 업체에 &#39;AI 상품 추천 구좌&#39;, &#39;사용자 활동 기반 쿠폰 증정 캠페인&#39; 기능 주도적으로 기획하여 의뢰<br>
+          &#9643; 수정 용이성과 사용성을 고려한 퍼블리싱 진행<br>
+          - 업무성과 : 체류시간, 배너 클릭수 등 수치로서 유의미한 성과 도출<br><br>
+
+          <b>&#40;2&#41; 자사몰 운영 및 퍼블리셔 직무 가이드 구축</b><br>
+          - 수행 기간 : 2024.04 ~ 2024.04<br>
+          - 프로젝트 요약 : 노션과 PowerPoint를 활용하여 자사몰&#40;지브로마트&#41; 운영 및 퍼블리셔 직무 가이드 구축<br>
+          - 참여비율&#40;참여인력&#41; : 100&#37;&#40;1명&#41;<br>
+          - 주요업무 :<br>
+          &#9643; 자사몰 운영 및 퍼블리셔 직무 프로세스를 PowerPoint 400장 이상의 시각 자료로 제작하여 노베이스도 따라할 수 있도록 상세히 작성<br>
+          &#9643; PowerPoint로 작성된 자료를 노션에 업무별로 분류하고, 세부 설명과 유의사항, 보조 업무 등을 추가하여 체계를 갖춘 웹 가이드 구축<br>
+          &#9643; 비개발자도 수정할 수 있는 수준으로 기존 코드 리팩토링 및 주석 추가<br>
+          - 업무성과 : 방대한 업무 범위를 비개발자에게 원활히 인수인계 완료<br><br>
+
+          <b>&#40;3&#41; KBO 프로야구 시즌 라O온즈O크 콜라보레이션 캠페인</b><br>
+          - 수행 기간 : 2023.03 ~ 2024.04<br>
+          - 프로젝트 요약 : 2023-2024 KBO 프로야구 시즌 동안 라O온즈O크와 콜라보를 통해 다양한 캠페인 진행<br>
+          - 참여비율&#40;참여인력&#41; : 100&#37;&#40;1명&#41;<br>
+          - 주요업무 :<br>
+          &#9643; KBO 시즌 동안 자사몰 홍보를 위한 이닝간 이벤트 기획 및 홍보 소재&#40;전광판 홍보물 등&#41; 산출<br>
+          &#9643; 거래처&#40;O뚜기, O원 등&#41; 협찬 이벤트 기획 및 홍보 소재&#40;전광판 홍보물 등&#41; 산출<br>
+          &#9643; 라O온즈O크 홈 경기 기간 동안만 접속 가능한 프로모션 랜딩페이지를 매년 기획에 맞춰 리뉴얼 후 운영<br>
+          &#9643; SNS&#40;인스타그램&#41;를 이용한 라O온즈파크 콜라보레이션 이벤트, 설문조사 등 캠페인 운영<br>
+          - 업무성과 : 자사몰 접속수, PV, 구매율 증가 등 수치로서 유의미한 성과 도출<br><br>
+
+          <b>&#40;4&#41; 자사몰 프로모션 랜딩페이지 운영</b><br>
+          - 수행 기간 : 매월 2-3회 약 1주 소요<br>
+          - 내용요약 : 매월 2-3개의 컨셉 및 브랜드 프로모션을 기획하여 랜딩페이지 제작 후 운영<br>
+          &#9643; 각 시즌 트렌드에 맞추거나 자체 컨셉을 구상하여 프로모션 이벤트 기획<br>
+          &#9643; 각 기획 의도가 잘 드러나는 랜딩페이지 디자인을 산출하여 퍼블리싱 진행<br>
+          &#9643; 매주 진행중인 이벤트 성과 분석 후 개선사항 도출<br>
+          - 업무성과 : 사용자에게 다양한 혜택을 제공해 구매율, 매출 등 수치로서 유의미한 성과 도출 &#40;ROI 기반&#41;<br><br>
+
+          <b>&#40;5&#41; 카카오톡 비즈니스를 활용한 개인화 마케팅</b><br>
+          - 수행 기간 : 상시<br>
+          - 내용요약 : 일정 기간마다 특정 고객군을 타기팅하여 맞춤 홍보물을 전송하는 CRM 마케팅<br>
+          - 참여비율&#40;참여인력&#41; : 90&#37;&#40;2명&#41;<br>
+          - 주요업무 :<br>
+          &#9643; 카카오 비즈니스에서 제공하는 각 템플릿의 특성을 살린 소재 제작<br>
+          &#9643; 매주 전송한 알림톡 성과 분석<br>
+          - 업무성과 : 특정 상품을 구매한 고객, 충성도가 높은 고객과 같이 맞춤 타기팅을 통한 캠페인으로 섬세한 고객 관리 수행<br>
+</body>
+
+</html>
+
+</div>
+
+<!--프로젝트 자료-->
+<a href="https://diveincode.tistory.com/2" target="_blank">
+  <div class="mb-4 pdf leading-normal flex flex-col justify-center items-center"><span>회고록
+      보기</span><span class='text-xs opacity-50'>Tstory로
+      이동</span> </div>
+</a>
+</div>
+
+
+</section>
+
+
+<!--마우스커서-->
+<div class="cursor"></div>
+
+
+<script src="../js/cursor.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    thumbs: {
+      swiper: swiper
+    }
+  });
+</script>
+<script src="../js/slideW.js"></script>
+<script src="../js/thumb_script.js"></script>
+</body>
+
+</html>

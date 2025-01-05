@@ -33,6 +33,10 @@
   cursor: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   cursor: none;
 }
@@ -49,7 +53,6 @@ a {
   position: relative;
   width: 50%;
   overflow: hidden;
-  background: url(https://source.unsplash.com/random/?wall);
   background-size: cover;
   background-position: center;
 }
@@ -57,7 +60,6 @@ a {
 .scrollTitle div:nth-child(1) {
   position: relative;
   width: 50%;
-  background: url(https://source.unsplash.com/random/?Texture);
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -225,7 +227,7 @@ a {
 }
 
 .skillTitle {
-  font-family: "CWDangamAsac-Bold";
+  font-family: "GongGothicMedium";
   color: white;
   font-weight: 600;
   font-size: max(5vw, 28px);
@@ -450,6 +452,16 @@ ul li:hover ~ .cursor {
 }
 .zoom:hover ~ .cursor {
   transform: scale(5) !important;
+}
+
+/* 크레딧 박스 */
+#credit-box {
+  transition: transform 0.1s ease-out;
+  pointer-events: none; /* 마우스 이벤트 차단 */
+  max-width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*디자인요소 미디어쿼리*/
